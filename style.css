@@ -6788,8 +6788,10 @@ blockquote {
 
 .footer-top {
   padding-top: 50px;
-  padding-bottom: 50px;
-  background: url(images/footer-back.jpg) right bottom no-repeat #010101; }
+  padding-bottom: 50px;  
+  /* background-color: black;          */
+  background: url(images/footer-back.jpg) right bottom no-repeat #010101; 
+}
   .footer-top p {
     font-size: 14px;
     color: #747474;
