@@ -128,11 +128,13 @@ jQuery(window).on('resize', function() {
 	$container.isotope({
 	  itemSelector: '.product-grid'
 	});
+	var selector = jQuery('.product-list-filter a.active').attr('data-filter');
+	$container.isotope({ filter: selector });
 	// filter items when filter link is clicked
 	jQuery('.product-list-filter a').on('click', function(){
 		jQuery('.product-list-filter a').removeClass('active');
 		jQuery(this).addClass('active');
-	  var selector = jQuery(this).attr('data-filter');
+	  selector = jQuery(this).attr('data-filter');
 	  $container.isotope({ filter: selector });
 	  return false;
 	});
