@@ -6440,7 +6440,9 @@ blockquote {
     float: right; }
   @media (min-width: 768px) {
     .banner-v1 {
-      min-height: 550px; } }
+      /* min-height: 550px;  */
+    
+    } }
   @media (min-width: 992px) {
     .banner-v1 {
       /* padding-top: 150px;
